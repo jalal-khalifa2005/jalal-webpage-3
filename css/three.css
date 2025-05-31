@@ -1,0 +1,310 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+
+
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* end of global roles */
+
+/* start of header */
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    align-items: center;
+
+
+
+}
+
+header .container .logo {
+    text-transform: uppercase;
+    color: white;
+
+}
+
+header .container nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+    align-items: center;
+    color: white;
+    transition: 0.4s;
+    ;
+
+
+}
+
+header .container nav ul li {
+    transition: 0.4s;
+}
+
+ul li:not(.on):hover {
+
+    color: #2651a8;
+    transform: translateY(-50%);
+    font-size: 15px;
+    font-weight: 900;
+
+}
+
+header .container nav i {
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+
+header .container nav ul .on {
+
+    border-radius: 6px;
+    background: #2651a8;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+@media (max-width: 1000px) {
+    header .container nav ul {
+        display: none;
+    }
+
+    header .container nav i {
+        display: block;
+
+
+    }
+}
+
+header {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+
+
+}
+
+/* start of lannding */
+
+.lannding {
+    background-image: url('https://templated.co/items/demos/assembly/images/header-bg.jpg');
+    background-size: cover;
+
+    min-height: 85vh;
+    position: relative;
+
+
+}
+
+.lannding .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.lannding .container .centerr {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+}
+
+.lannding .container .centerr h3 {
+    color: white;
+    font-size: 50px;
+    ;
+}
+
+.lannding .container .centerr p {
+    color: #777;
+    font-size: 25px;
+}
+
+.lannding .container .centerr a {
+    text-decoration: none;
+    color: white;
+    margin-top: 40px;
+    background-color: #2651a8;
+    padding: 20px 55px;
+    border-radius: 6px;
+    font-size: 20px;
+
+}
+
+/* start of services */
+.services .container {
+    margin-top: 65px;
+    margin-bottom: 65px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 55px
+
+}
+
+.services .container .title h4 {
+    font-size: 35px;
+
+
+}
+
+.services .container .title p {
+    margin-top: 10px;
+    color: #777;
+    font-size: 17px;
+
+}
+
+.services .container .ser {
+    display: flex;
+    gap: 40px;
+    color: #777;
+    line-height: 1.5;
+
+
+}
+@media (max-width: 1000px) {
+    .services .container .ser{
+        flex-direction: column;
+    }
+}
+
+
+.services .container .ser1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+align-items: center;
+}
+
+.services .container .ser1 a {
+
+    color: white;
+    margin-top: 40px;
+    background-color: #2651a8;
+    padding:17px;
+    width:50%;
+    border-radius:6px;
+    font-size: 18px;
+    
+
+}
+/* start of blueside */
+.blue {
+    
+    background-color: #2651a8;
+}
+.blue .container {
+    padding-top:120px;
+     padding-bottom:120px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.blue .container .title h4 {
+     font-size: 35px;
+     color:white;
+
+}
+.blue .container .title p {
+   margin-top: 10px;
+    color:#cbcbcb;
+    font-size: 17px;
+    margin-bottom:80px;
+
+}
+.blue .container .title a {
+    background-color: white;
+    padding:20px 40px;
+    border-radius:6px;
+    font-weight: 600;
+    text-align: center;
+    color:#2651a8
+    
+}
+/* footer */
+
+.footer {
+    background-color: rgba(255, 255, 255, 0.874);
+
+}
+.footer .container{
+
+padding-top:60px;
+padding-bottom:60px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+
+
+
+}
+.footer .container h6 {
+    font-size: 20px;
+    
+}
+span{
+    color:#2651a8;
+    font-weight: 800;
+}
+
